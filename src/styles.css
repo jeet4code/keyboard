@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(3, 30px);
+  
+}
+
+.key {
+  width:30px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  grid-column: span 2;
+}
+
+.key.selected {
+  background:gray
+}
+
+.key.spacer {
+  visibility: hidden;
+  grid-column: span 1;
+}
